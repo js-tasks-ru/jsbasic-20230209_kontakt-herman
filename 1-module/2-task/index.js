@@ -10,7 +10,10 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  // ваш код...
+  if(name === null) return false;
+
+  let isSpaces = name.split('');
+  return (name === '' || name.length < 4 || isSpaces.includes(' ')) ? false : true;
 }
 
 function sayHello() {
