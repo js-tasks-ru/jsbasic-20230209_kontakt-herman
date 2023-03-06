@@ -20,7 +20,7 @@ function highlight(table) {
     } else if (userStatus === 'false') {
       row[i].classList.add('unavailable');
     } else {
-      row[i].setAttribute('hidden', true);
+      row[i].hidden = true;
     }
   }
 }
